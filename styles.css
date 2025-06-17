@@ -561,6 +561,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
     border-left: 3px solid transparent;
     cursor: default;
+    margin-bottom: 12px;
 }
 
 .certification-item:hover {
@@ -2339,6 +2340,11 @@ section.contact {
         animation: none !important;
         transition: none !important;
     }
+}
+
+@media (min-width: 768px) {
+  .certifications-grid .certification-item { display: block !important; }
+  #ver-mas-cert, #ver-mas-cert-trigger, #cert-mas { display: none !important; }
 }
 
 
