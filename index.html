@@ -11,6 +11,27 @@
     @media (min-width: 768px) {
       .certifications-grid .certification-item { display: block !important; }
       #ver-mas-cert, #ver-mas-cert-trigger { display: none !important; }
+      .book-horizontal .book-card-horizontal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        max-width: 600px;
+        margin: 0 auto 48px auto;
+        padding: 24px 32px 24px 32px;
+        border-radius: 16px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        background: #fff;
+        text-align: left;
+      }
+      .book-horizontal .books-image {
+        margin-bottom: 0 !important;
+        max-width: 260px;
+        flex-shrink: 0;
+      }
+      .book-horizontal .books-info {
+        flex: 1;
+      }
     }
     @media (max-width: 767px) {
       .certifications-grid .certification-item { display: none; }
@@ -18,6 +39,20 @@
       .certifications-grid.show-all-certs .certification-item { display: block; }
       #ver-mas-cert { display: none; }
       .certifications-grid.show-all-certs #ver-mas-cert { display: block; }
+      .book-horizontal .book-card-horizontal {
+        display: block;
+        max-width: 320px;
+        margin: 0 auto 48px auto;
+        padding: 20px 14px 16px 14px;
+        border-radius: 16px;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+        background: #fff;
+        text-align: center;
+      }
+      .book-horizontal .books-image {
+        margin-bottom: 20px !important;
+        max-width: 100%;
+      }
     }
     </style>
 </head>
@@ -380,12 +415,12 @@
     <section id="libros" class="books">
         <div class="container">
             <h2 class="section-title animate-on-scroll" style="margin-top: 40px;">Libros</h2>
-            <div class="books-content">
-                <div class="book-card" style="max-width:320px;margin:0 auto 48px auto;padding:20px 14px 16px 14px;border-radius:16px;box-shadow:0 2px 16px rgba(0,0,0,0.08);background:#fff;text-align:center;">
-                    <img src="assets/foto-libro-fer.jpeg" alt="Libros de Kinesiología Funcional Aplicada" class="books-image" style="max-width:350px;width:100%;height:auto;margin-bottom:20px;" />
+            <div class="books-content book-horizontal">
+                <div class="book-card-horizontal">
+                    <img src="assets/foto-libro-fer.jpeg" alt="Libros de Kinesiología Funcional Aplicada" class="books-image" style="max-width:260px;width:100%;height:auto;margin-bottom:20px;" />
                     <div class="books-info">
                         <h3>Kinesiología Funcional Aplicada</h3>
-                        <p>Ejercicios de readaptación y desarrollo para el deporte.<br>Precio: <strong>a consultar</strong></p>
+                        <p style="margin-top:18px;">Ejercicios de readaptación y desarrollo para el deporte.</p>
                         <a href="mailto:fernandodignani@gmail.com?subject=Consulta%20por%20libros" class="cta-button" style="margin-top:10px;display:inline-block;">Consultar</a>
                         <br>
                         <a href="mailto:contacto@fernandodignani.com?subject=Consulta%20por%20libros" class="cta-button" style="margin-top:10px;display:inline-block;background:#2d7be5;">Consultar</a>
