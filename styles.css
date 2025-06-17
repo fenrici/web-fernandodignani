@@ -561,7 +561,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
     border-left: 3px solid transparent;
     cursor: default;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
 }
 
 .certification-item:hover {
