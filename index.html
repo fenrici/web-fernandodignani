@@ -159,41 +159,44 @@
                             <i class="fas fa-hands"></i>
                             <span>Terapista manual en Método Pold</span>
                         </div>
-                        <div class="certification-item">
-                            <i class="fas fa-microscope"></i>
-                            <span>Terapeuta en Microelectrolisis Percutánea (MEP)</span>
-                        </div>
-                        <div class="certification-item">
-                            <i class="fas fa-tape"></i>
-                            <span>K - Taping Pro</span>
-                        </div>
-                        <div class="certification-item">
-                            <i class="fas fa-user-check"></i>
-                            <span>FMS (Functional Movement Systems) / SFMA (Selective Functional Movement Assessment)</span>
-                        </div>
-                        <div class="certification-item">
-                            <i class="fas fa-walking"></i>
-                            <span>Estudios Baropodométricos (Análisis de la pisada, la marcha y la postura)</span>
-                        </div>
-                        <div class="certification-item">
-                            <i class="fas fa-cube"></i>
-                            <span>Estudios Biomecánicos en 3D, EMG y análisis de video en 2D. NORAXON</span>
-                        </div>
-                        <div class="certification-item">
-                            <i class="fas fa-dumbbell"></i>
-                            <span>Estudios con Dinamómetro de Fuerza Isométrica</span>
-                        </div>
-                        <div class="certification-item">
-                            <i class="fas fa-arrows-alt-h"></i>
-                            <span>Estudios con Encoder lineal - Fuerza Dinámica</span>
-                        </div>
-                        <div class="certification-item">
-                            <i class="fas fa-search"></i>
-                            <span>Ecografía músculo-esquelética</span>
-                        </div>
-                        <div class="certification-item">
-                            <i class="fas fa-thermometer-half"></i>
-                            <span>Termografía infrarroja en el Deporte</span>
+                        <a href="#" id="ver-mas-cert" style="display:block;margin:18px auto 0 auto;text-align:center;color:#2d7be5;font-weight:500;cursor:pointer;">Ver más</a>
+                        <div id="cert-mas" style="display:none;">
+                            <div class="certification-item">
+                                <i class="fas fa-microscope"></i>
+                                <span>Terapeuta en Microelectrolisis Percutánea (MEP)</span>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fas fa-tape"></i>
+                                <span>K - Taping Pro</span>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fas fa-user-check"></i>
+                                <span>FMS (Functional Movement Systems) / SFMA (Selective Functional Movement Assessment)</span>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fas fa-walking"></i>
+                                <span>Estudios Baropodométricos (Análisis de la pisada, la marcha y la postura)</span>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fas fa-cube"></i>
+                                <span>Estudios Biomecánicos en 3D, EMG y análisis de video en 2D. NORAXON</span>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fas fa-dumbbell"></i>
+                                <span>Estudios con Dinamómetro de Fuerza Isométrica</span>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fas fa-arrows-alt-h"></i>
+                                <span>Estudios con Encoder lineal - Fuerza Dinámica</span>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fas fa-search"></i>
+                                <span>Ecografía músculo-esquelética</span>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fas fa-thermometer-half"></i>
+                                <span>Termografía infrarroja en el Deporte</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -373,7 +376,7 @@
                         <p>Ejercicios de readaptación y desarrollo para el deporte.<br>Precio: <strong>a consultar</strong></p>
                         <a href="mailto:fernandodignani@gmail.com?subject=Consulta%20por%20libros" class="cta-button" style="margin-top:10px;display:inline-block;">Consultar</a>
                         <br>
-                        <a href="mailto:contacto@fernandodignani.com.ar?subject=Consulta%20por%20libros" class="cta-button" style="margin-top:10px;display:inline-block;background:#2d7be5;">Consultar</a>
+                        <a href="mailto:contacto@fernandodignani.com?subject=Consulta%20por%20libros" class="cta-button" style="margin-top:10px;display:inline-block;background:#2d7be5;">Consultar</a>
                     </div>
                 </div>
             </div>
@@ -405,7 +408,7 @@
                         </div>
                         <div class="contact-item-content">
                             <h3>Email</h3>
-                            <p><a href="mailto:contacto@fernandodignani.com.ar">contacto@fernandodignani.com.ar</a></p>
+                            <p><a href="mailto:contacto@fernandodignani.com">contacto@fernandodignani.com</a></p>
                         </div>
                     </div>
                     
@@ -452,5 +455,18 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    document.getElementById('ver-mas-cert').onclick = function(e) {
+        e.preventDefault();
+        var mas = document.getElementById('cert-mas');
+        if (mas.style.display === 'none') {
+            mas.style.display = 'block';
+            this.textContent = 'Ver menos';
+        } else {
+            mas.style.display = 'none';
+            this.textContent = 'Ver más';
+        }
+    };
+    </script>
 </body>
 </html> 
