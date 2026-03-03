@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fernando Dignani - Kinesiólogo Deportivo</title>
-    <link rel="stylesheet" href="styles.css?v=1704894456">
+    <link rel="stylesheet" href="styles.css?v=20250306">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -70,6 +70,7 @@
                 <a href="#servicios" class="nav-link">Servicios</a>
                 <a href="#negocios" class="nav-link">Negocios y Proyectos</a>
                 <a href="#metodo" class="nav-link">Método FD+</a>
+                <a href="#libros" class="nav-link">Libros</a>
                 <a href="#contacto" class="nav-link">Contacto</a>
             </div>
             <div class="hamburger" id="hamburger">
@@ -100,26 +101,25 @@
         </div>
     </section>
 
-    <!-- Sobre mí Section -->
-    <section id="sobre-mi" class="about">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Sobre mí</h2>
-            <div class="about-content">
-                <div class="about-text animate-on-scroll">
-                    <p>
-                        Soy Fernando Dignani, kinesiólogo especializado en el alto rendimiento deportivo, con más de 
-                        <strong>20 años de experiencia</strong> trabajando con deportistas profesionales y clubes de elite. 
-                        He acompañado a jugadores como <strong>José Sosa, Erik Lamela y el Papu Gómez</strong> en sus 
-                        procesos de recuperación y optimización física.
+    <!-- Sobre mí Section - Rediseño completo -->
+    <section id="sobre-mi" class="about-section">
+        <div class="about-section__inner">
+            <h2 class="about-section__title animate-on-scroll">Sobre mí</h2>
+            <div class="about-section__card animate-on-scroll">
+                <div class="about-section__bio">
+                    <p class="about-section__lead">
+                        Soy <strong>Fernando Dignani</strong>, kinesiólogo especializado en alto rendimiento deportivo.
                     </p>
-                    <p>
-                        Creador del <strong>método FD+</strong>, aplico tecnología avanzada y un enfoque integral para 
-                        acelerar la rehabilitación, prevenir lesiones y mejorar el rendimiento físico.
+                    <p class="about-section__text">
+                        Con más de <strong class="about-section__highlight">20 años de experiencia</strong> trabajando con deportistas profesionales y clubes de elite. He acompañado a jugadores como <strong>José Sosa, Erik Lamela y el Papu Gómez</strong> en sus procesos de recuperación y optimización física.
+                    </p>
+                    <p class="about-section__text">
+                        Creador del <strong>método FD+</strong>, aplico tecnología avanzada y un enfoque integral para acelerar la rehabilitación, prevenir lesiones y mejorar el rendimiento físico.
                     </p>
                 </div>
-                <div class="experience-highlights animate-on-scroll">
-                    <h3>Experiencia internacional destacada:</h3>
-                    <ul class="experience-list">
+                <div class="about-section__experience">
+                    <h3 class="about-section__exp-title">Experiencia internacional destacada</h3>
+                    <ul class="about-section__exp-list">
                         <li><i class="fas fa-globe"></i> Metalist FC - Ucrania</li>
                         <li><i class="fas fa-trophy"></i> Club Guaraní y Club Olimpia – Paraguay</li>
                         <li><i class="fas fa-futbol"></i> Club Deportivo Manchego - España</li>
@@ -383,27 +383,37 @@
                     </p>
                 </div>
                 <div class="method-elements">
-                    <h3 class="animate-on-scroll">Elementos clave:</h3>
-                    <div class="elements-grid">
-                        <div class="element-item animate-on-scroll">
-                            <i class="fas fa-cube"></i>
-                            <span>Evaluación biomecánica en 3D</span>
+                    <h3 class="method-elements__title animate-on-scroll">Elementos clave</h3>
+                    <div class="method-elements__grid">
+                        <div class="method-card animate-on-scroll">
+                            <div class="method-card__icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <span class="method-card__label">Evaluación biomecánica en 3D</span>
                         </div>
-                        <div class="element-item animate-on-scroll">
-                            <i class="fas fa-wave-square"></i>
-                            <span>EMG de superficie</span>
+                        <div class="method-card animate-on-scroll">
+                            <div class="method-card__icon">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                            <span class="method-card__label">EMG de superficie</span>
                         </div>
-                        <div class="element-item animate-on-scroll">
-                            <i class="fas fa-video"></i>
-                            <span>Análisis de video</span>
+                        <div class="method-card animate-on-scroll">
+                            <div class="method-card__icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <span class="method-card__label">Análisis de video</span>
                         </div>
-                        <div class="element-item animate-on-scroll">
-                            <i class="fas fa-shoe-prints"></i>
-                            <span>Baropodometría</span>
+                        <div class="method-card animate-on-scroll">
+                            <div class="method-card__icon">
+                                <i class="fas fa-shoe-prints"></i>
+                            </div>
+                            <span class="method-card__label">Baropodometría</span>
                         </div>
-                        <div class="element-item animate-on-scroll">
-                            <i class="fas fa-chart-line"></i>
-                            <span>Rutinas personalizadas basadas en datos</span>
+                        <div class="method-card animate-on-scroll">
+                            <div class="method-card__icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <span class="method-card__label">Rutinas personalizadas basadas en datos</span>
                         </div>
                     </div>
                 </div>
@@ -414,16 +424,17 @@
     <!-- Libros Section -->
     <section id="libros" class="books">
         <div class="container">
-            <h2 class="section-title animate-on-scroll" style="margin-top: 40px;">Libros</h2>
+            <h2 class="section-title animate-on-scroll">Libros</h2>
             <div class="books-content book-horizontal">
                 <div class="book-card-horizontal">
                     <img src="assets/foto-libro-fer.jpeg" alt="Libros de Kinesiología Funcional Aplicada" class="books-image" style="max-width:260px;width:100%;height:auto;margin-bottom:20px;" />
                     <div class="books-info">
                         <h3>Kinesiología Funcional Aplicada</h3>
                         <p style="margin-top:18px;">Ejercicios de readaptación y desarrollo para el deporte.</p>
-                        <a href="mailto:fernandodignani@gmail.com?subject=Consulta%20por%20libros" class="cta-button" style="margin-top:10px;display:inline-block;">Consultar</a>
-                        <br>
-                        <a href="mailto:fernandodignani@gmail.com?subject=Consulta%20por%20libros" class="cta-button" style="margin-top:10px;display:inline-block;background:#2d7be5;">Consultar</a>
+                        <a href="https://wa.me/34608564486?text=Hola%20Fernando%2C%20me%20interesa%20el%20libro%20de%20Kinesiolog%C3%ADa%20Funcional%20Aplicada." class="cta-button cta-books" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar
+                        </a>
                     </div>
                 </div>
             </div>

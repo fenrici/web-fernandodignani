@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('scroll', requestNavbarUpdate, { passive: true });
+    window.addEventListener('resize', requestNavbarUpdate);
 
     // Enhanced parallax effect for hero section (only on desktop)
     const hero = document.querySelector('.hero');
